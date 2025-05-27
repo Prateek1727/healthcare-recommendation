@@ -4,7 +4,7 @@
 
 ```
 medi-recs/
-├── src/               # Backend modules
+├── src/               
 │   ├── api/
 │   ├── chatbox/
 │   ├── config.py
@@ -15,11 +15,11 @@ medi-recs/
 │   ├── security/
 │   ├── tests/
 │   └── utils/
-├── frontend/          # Streamlit frontend
+├── frontend/         
 │   ├── app.py
 │   └── requirements.txt
-├── data/              # Data samples
-├── docker/            # Dockerfiles, Compose
+├── data/            
+├── docker/           
 │   ├── Dockerfile.api
 ├── requirements.txt
 ├── README.md
