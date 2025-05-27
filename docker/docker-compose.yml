@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.api
+    ports:
+      - "8000:8000"
+    environment:
+      - RAW_DATA_PATH=/app/data/raw/
+      - PROCESSED_DATA_PATH=/app/data/processed/
+  streamlit:
+    build:
+      context: ../frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501"
+    depends_on:
+      - api
